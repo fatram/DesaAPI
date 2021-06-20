@@ -20,7 +20,6 @@ func homePage(w http.ResponseWriter, r *http.Request) {
 }
 
 func returnVillages(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("Endpoint Hit: articles")
 	var villages []Village
 	var response Response
 	var metaInfo MetaInfo
@@ -121,8 +120,6 @@ func returnVillages(w http.ResponseWriter, r *http.Request) {
 		}
 	}
 
-	response.Status = 1
-	response.Message = "Success"
 	response.Data = villages
 	metaInfo.ItemsPerPage = ipp
 	metaInfo.CurrentPage = cp

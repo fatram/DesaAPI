@@ -16,8 +16,6 @@ type MetaInfo struct {
 }
 
 type Response struct {
-	Status  int       `json:"status"`
-	Message string    `json:"message"`
-	Data    []Village `json:"data"`
-	Meta    MetaInfo  `json:"meta"`
+	Data []Village `json:"data"`
+	Meta MetaInfo  `json:"meta"`
 }
